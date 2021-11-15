@@ -1,5 +1,0 @@
-{
-  "main": "../cjs/search.js",
-  "module": "../esm/search.js",
-  "types": "../models/search/index.d.ts"
-}

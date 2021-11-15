@@ -1,9 +1,6 @@
 {
-  // Always show the ESlint status bar item.
-  "eslint.alwaysShowStatus": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -25,44 +22,27 @@
   "html.format.enable": true,
   // End with a newline.
   "html.format.endWithNewline": false,
-  "files.exclude": {
-    // exclude .js and .js.map files, when in a TypeScript project
-    "**/*.js.map": true,
-    "**/*.js": {
-      "when": "$(basename).ts"
-    },
-    "**/*?.js": {
-      "when": "$(basename).tsx"
-    }
-  },
-  "editor.cursorBlinking": "smooth",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.colorCustomizations": {
-    "tab.activeBorderTop": "#e9654c",
-    "activityBar.background": "#2b2f51",
-    "activityBar.activeBackground": "#77e8c6",
-    "activityBar.activeBorder": "#221030",
-    "activityBar.foreground": "#2b2f51",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#221030",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "titleBar.activeBackground": "#113324",
-    "titleBar.inactiveBackground": "#11332499",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#113324",
-    "statusBarItem.hoverBackground": "#1e593f",
-    "statusBar.foreground": "#e7e7e7"
-  },
+  // Turns auto fix on save on or off.
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "search.exclude": {
-    "**/.git": true,
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/tmp": true,
-    "**/cjs": true,
-    "**/esm": true
+  "editor.cursorBlinking": "smooth",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#f9bfaf",
+    "activityBar.background": "#372f2c",
+    "activityBar.activeBorder": "#f9bfaf",
+    "activityBar.foreground": "#f9bfaf",
+    "activityBar.inactiveForeground": "#8f7068",
+    "activityBarBadge.background": "#f9bfaf",
+    "activityBarBadge.foreground": "#ffffff",
+    "titleBar.activeBackground": "#221e1c",
+    "titleBar.inactiveBackground": "#221e1c99",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#221e1c",
+    "statusBarItem.hoverBackground": "#372f2c",
+    "statusBar.foreground": "#e7e7e7"
   }
 }

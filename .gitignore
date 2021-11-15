@@ -1,16 +1,31 @@
-/node_modules
-/coverage
-/build
-/dist
-/docs
-npm-debug.log*
+# JavaScript output files
+lib/
+build/
+
+
+# Logs
+logs
 *.log
-yarn-error.log
-__snapshots__
-.cache
-/old
-.DS_Store
-.out
-storybook-static/
-client-stats.html
-/.idea
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test

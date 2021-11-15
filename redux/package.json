@@ -1,5 +1,0 @@
-{
-  "main": "../cjs/redux.js",
-  "module": "../esm/redux.js",
-  "types": "../models/redux/index.d.ts"
-}

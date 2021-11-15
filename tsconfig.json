@@ -1,33 +1,21 @@
 {
   "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "outDir": "./models/", // path to output directory
-    "sourceMap": true, // allow sourcemap support
-    "strictNullChecks": true, // enable strict null checks as a best practice
-    "module": "ESNext", // specifiy module code generation
-    "jsx": "react", // use typescript to transpile jsx to js
-    "target": "ESNext", // specify ECMAScript target version
-    "strict": true /* Enable all strict type-checking options. */,
-    "allowJs": true, // allow a partial TypeScript and JavaScript codebase
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "declaration": true,
-    // Ensure that .d.ts files are created by tsc, but not .js files
-    "emitDeclarationOnly": true,
-    "noImplicitAny": false, // disallow implicit any type
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["esnext", "es2019", "es2017", "es7", "es6", "dom", "dom.iterable"],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"],
-      "-/*": ["./*"],
-      "redux": ["node_modules/redux"]
-    },
-    "plugins": [
-      // Transform paths in output .d.ts files (Include this line if you output declarations files)
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ]
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "include": ["./src/**/*", "./node_modules/zengenti-search-package/src/**/*"],
-  "exclude": ["./node_modules/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "lib"]
 }
