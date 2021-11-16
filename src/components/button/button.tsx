@@ -1,4 +1,4 @@
-export interface ExampleProps {
+export interface ButtonProps {
   // Is this the principal call to action on the page?
   primary?: boolean;
   // What background color to use
@@ -18,7 +18,7 @@ export const Button = ({
   backgroundColor,
   label,
   ...props
-}: ExampleProps) => {
+}: ButtonProps) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
