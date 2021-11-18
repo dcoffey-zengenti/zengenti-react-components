@@ -27,6 +27,7 @@ export default [
           "lib",
           "src/**/*stories.tsx",
           "src/**/*test.*",
+          "public",
         ],
       }),
     ],
