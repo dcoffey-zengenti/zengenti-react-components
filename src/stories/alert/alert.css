@@ -1,0 +1,73 @@
+.alert {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 16px;
+  max-width: 463px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.alert-icon__wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+}
+
+.alert-high {
+  background: rgba(249, 215, 215, 0.6);
+}
+
+.alert-high .alert-icon__wrapper {
+  background-color: rgba(202, 33, 33, 0.1);
+}
+
+.alert-medium {
+  background: rgba(249, 242, 215, 0.6);
+}
+
+.alert-medium .alert-icon__wrapper {
+  background-color: rgba(220, 179, 19, 0.1);
+}
+
+.alert-low {
+  background: rgba(241, 246, 253, 0.6);
+}
+
+.alert-low .alert-icon__wrapper {
+  background-color: rgba(29, 95, 194, 0.1);
+}
+
+.alert-text {
+  margin: 0;
+}
+
+.alert-btn--close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.alert-btn--close:hover {
+  transition: opacity 200ms ease-out;
+  opacity: 0.6;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
