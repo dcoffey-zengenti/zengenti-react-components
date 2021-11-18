@@ -2,13 +2,13 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 // Component
-import { AccordionItem } from "../../components/accordion";
+import { AccordionItem } from "../../index";
 
 // Layout
-import "./Accordion.css";
+import "./accordion.css";
 
 export default {
-  title: "Example/Accordion/Single",
+  title: "Components/Accordion/Single",
   component: AccordionItem,
   argTypes: {
     className: { control: { disable: true } },
