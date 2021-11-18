@@ -1,0 +1,7 @@
+const Facebook = () => {
+  return (
+    <path d="M17 2V6H15C14.3 6 14 6.8 14 7.5V10H17V14H14V22H10V14H7V10H10V6C10 4.93913 10.4214 3.92172 11.1716 3.17157C11.9217 2.42143 12.9391 2 14 2H17Z" />
+  );
+};
+
+export default Facebook;
