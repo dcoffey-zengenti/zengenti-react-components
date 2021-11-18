@@ -1,35 +1,39 @@
-export interface ButtonProps {
-  // Is this the principal call to action on the page?
-  primary?: boolean;
-  // What background color to use
-  backgroundColor?: string;
-  // How large should the button be?
-  size?: "small" | "medium" | "large";
-  // Button contents
+import React from "react";
+
+interface ButtonProps {
+  className?: string;
+  type: "button" | "submit" | "reset";
+  isPrimary: boolean;
+  isDisabled: boolean;
   label: string;
-  // Optional click handler
-  onClick?: () => void;
+  onClick: (e: React.MouseEvent<HTMLElement>) => void;
+  backgroundColor?: string;
+  textColor?: string;
+  borderColor?: string;
 }
 
-// Primary UI component for user interaction
 export const Button = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
+  className,
+  type = "button",
+  isPrimary = true,
+  isDisabled = false,
   label,
-  ...props
+  onClick,
+  backgroundColor,
+  textColor,
+  borderColor,
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+  const _handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    if (onClick) onClick(e);
+  };
+
   return (
     <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ backgroundColor }}
-      {...props}
+      style={{ backgroundColor, color: textColor, borderColor }}
+      type={type}
+      className={`${className} btn ${isPrimary ? "primary" : "secondary"}`}
+      disabled={isDisabled}
+      onClick={(e) => _handleClick(e)}
     >
       {label}
     </button>

@@ -9,6 +9,13 @@
   border-radius: 4px;
 }
 
+.btn:disabled {
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+  color: #fff;
+  cursor: not-allowed;
+}
+
 .primary {
   background-color: #2b2f51;
   color: #77e8c6;
