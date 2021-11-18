@@ -1,0 +1,13 @@
+.block-quote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  padding-left: 1.5rem;
+  border-left: 0.2rem solid #ccc;
+}
+.block-quote_text {
+  margin: 0;
+}
+.block-quote--cite_wrapper {
+  padding-top: 1rem;
+}
