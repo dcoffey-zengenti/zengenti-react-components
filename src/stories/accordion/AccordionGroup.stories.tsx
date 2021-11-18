@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Accordion, AccordionItemProps } from "../../index";
 
 // Layout
-import "./accordion.css";
+import "./Accordion.css";
 
 export default {
   title: "Components/Accordion/Group",

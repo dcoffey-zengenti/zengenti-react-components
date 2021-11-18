@@ -19,5 +19,5 @@ IconSelect.args = {
   height: 24,
   width: 24,
   viewBox: "0 0 24 24",
-  type: undefined,
+  type: "facebook",
 };

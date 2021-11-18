@@ -1,9 +1,18 @@
+//page furniture icons
+import Close from "./assets/close";
+import Collapse from "./assets/collapse";
+import Expand from "./assets/expand";
+
+// social icons
 import Facebook from "./assets/facebook";
 import Linkedin from "./assets/linkedin";
 import Twitter from "./assets/twitter";
 import YouTube from "./assets/youtube";
 
 const iconDictionary = {
+  close: <Close />,
+  collapse: <Collapse />,
+  expand: <Expand />,
   facebook: <Facebook />,
   linkedin: <Linkedin />,
   twitter: <Twitter />,
@@ -15,7 +24,14 @@ export interface IconProps {
   width?: number;
   height?: number;
   viewBox?: string;
-  type?: "facebook" | "linkedin" | "twitter" | "youtube";
+  type?:
+    | "close"
+    | "collapse"
+    | "expand"
+    | "facebook"
+    | "linkedin"
+    | "twitter"
+    | "youtube";
 }
 
 export const Icon = ({
