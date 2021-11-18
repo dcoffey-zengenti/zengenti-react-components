@@ -1,13 +1,13 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 // Component & Modal
-import { Accordion, AccordionItemProps } from "../../components/accordion";
+import { Accordion, AccordionItemProps } from "../../index";
 
 // Layout
-import "./Accordion.css";
+import "./accordion.css";
 
 export default {
-  title: "Example/Accordion/Group",
+  title: "Components/Accordion/Group",
   component: Accordion,
   argTypes: {
     className: { control: { disable: true } },

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // Components & Modal
-import { AccordionItem, AccordionItemProps } from "./AccordionItem";
+import { AccordionItem, AccordionItemProps } from "./accordionItem";
 
 export interface AccordionProps {
   className?: string;
