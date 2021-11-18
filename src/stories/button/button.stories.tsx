@@ -11,7 +11,6 @@ export default {
     onClick: { control: { disable: true } },
     backgroundColor: { control: "color" },
     textColor: { control: "color" },
-    borderColor: { control: "color" },
   },
 } as ComponentMeta<typeof Button>;
 

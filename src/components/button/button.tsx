@@ -9,7 +9,6 @@ interface ButtonProps {
   onClick: (e: React.MouseEvent<HTMLElement>) => void;
   backgroundColor?: string;
   textColor?: string;
-  borderColor?: string;
 }
 
 export const Button = ({
@@ -21,15 +20,14 @@ export const Button = ({
   onClick,
   backgroundColor,
   textColor,
-  borderColor,
 }: ButtonProps) => {
   const _handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    if (onClick) onClick(e);
+    if (onClick && !isDisabled) onClick(e);
   };
 
   return (
     <button
-      style={{ backgroundColor, color: textColor, borderColor }}
+      style={{ backgroundColor, color: textColor }}
       type={type}
       className={`${className} btn ${isPrimary ? "primary" : "secondary"}`}
       disabled={isDisabled}

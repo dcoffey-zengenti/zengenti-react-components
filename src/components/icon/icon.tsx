@@ -5,8 +5,11 @@ import Expand from "./assets/expand";
 
 // social icons
 import Facebook from "./assets/facebook";
+import Information from "./assets/information";
 import Linkedin from "./assets/linkedin";
+import Question from "./assets/question";
 import Twitter from "./assets/twitter";
+import Warning from "./assets/warning";
 import YouTube from "./assets/youtube";
 
 const iconDictionary = {
@@ -17,6 +20,9 @@ const iconDictionary = {
   linkedin: <Linkedin />,
   twitter: <Twitter />,
   youtube: <YouTube />,
+  information: <Information />,
+  question: <Question />,
+  warning: <Warning />,
 };
 
 export interface IconProps {
@@ -31,7 +37,10 @@ export interface IconProps {
     | "facebook"
     | "linkedin"
     | "twitter"
-    | "youtube";
+    | "youtube"
+    | "information"
+    | "question"
+    | "warning";
 }
 
 export const Icon = ({

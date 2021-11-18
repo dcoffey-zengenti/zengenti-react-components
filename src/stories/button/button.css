@@ -7,6 +7,8 @@
   line-height: 32px;
   font-family: "Poppins", sans-serif;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms ease-out;
 }
 
 .btn:disabled {
@@ -16,13 +18,33 @@
   cursor: not-allowed;
 }
 
+.btn:hover:disabled {
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 3px rgb(76, 154, 255) !important;
+  outline: transparent;
+}
+
 .primary {
   background-color: #2b2f51;
   color: #77e8c6;
+}
+
+.primary:hover {
+  background-color: #1e213e;
 }
 
 .secondary {
   background-color: transparent;
   border: 1px solid #2b2f51;
   color: #2b2f51;
+}
+
+.secondary:hover {
+  background: rgba(195, 198, 222, 0.2);
 }
