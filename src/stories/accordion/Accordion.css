@@ -1,6 +1,7 @@
 .accordion__wrapper {
   max-width: 720px;
   width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .accordion__header {
   align-items: center;
