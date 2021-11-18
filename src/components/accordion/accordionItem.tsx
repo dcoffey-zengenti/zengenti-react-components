@@ -29,7 +29,7 @@ export const AccordionItem = ({
   }, [pOpen]);
 
   return (
-    <div className={`${className} accordion-item`}>
+    <div className={["accordion-item", className].join(" ")}>
       <button
         type="button"
         onClick={() => _handleClick()}

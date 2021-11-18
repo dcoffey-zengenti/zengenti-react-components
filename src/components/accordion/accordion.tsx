@@ -56,7 +56,7 @@ export const Accordion = ({ className, items, title }: AccordionProps) => {
 
   if (!items || items.length < 1) return null;
   return (
-    <div className={`${className} accordion__wrapper`}>
+    <div className={["accordion__wrapper", className].join(" ")}>
       <div className="accordion__header">
         {title && <h2 className="accordion__header-title">{title}</h2>}
         <button
