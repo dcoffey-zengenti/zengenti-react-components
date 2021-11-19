@@ -22,7 +22,7 @@ export function Breadcrumbs({ nodes, separator = ">" }: BreadcrumbsProps) {
       <ol className="breadcrumbs__list">
         {nodes.map((node, index) => {
           const currentNode = node.isCurrent ? "current" : "";
-          if (node.displayName) return null;
+          if (!node.displayName) return null;
           return (
             <Fragment key={node.id}>
               {separator && index !== 0 && (
