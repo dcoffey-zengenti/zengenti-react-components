@@ -1,6 +1,7 @@
 //page furniture icons
 import Close from "./assets/close";
 import Collapse from "./assets/collapse";
+import Email from "./assets/email";
 import Expand from "./assets/expand";
 
 // social icons
@@ -12,6 +13,7 @@ import YouTube from "./assets/youtube";
 const iconDictionary = {
   close: <Close />,
   collapse: <Collapse />,
+  email: <Email />,
   expand: <Expand />,
   facebook: <Facebook />,
   linkedin: <Linkedin />,
@@ -27,6 +29,7 @@ export interface IconProps {
   type?:
     | "close"
     | "collapse"
+    | "email"
     | "expand"
     | "facebook"
     | "linkedin"
