@@ -6,10 +6,9 @@
 
 ## Installation and setup
 
-### Node and NPM Compatibility
+### Node Compatibility
 
 **Node:** ^14
-**NPM:** ^7.11.2
 
 ### Setting up the project locally
 
