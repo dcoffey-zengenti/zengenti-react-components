@@ -2,7 +2,7 @@
 
 Built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
 
-**Alert banners are used for presenting an urgent message to stakeholders who visit your website.**
+**Alert banners are used for presenting messages to visitors who are your website.**
 
 ## Props
 
