@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Icon } from "../icon";
 
 export interface AccordionItemProps {
   className?: string;
@@ -37,6 +38,12 @@ export const AccordionItem = ({
         className="accordion-item__btn"
       >
         {title}
+        <Icon
+          type={isOpen ? "collapse" : "expand"}
+          height={24}
+          width={24}
+          viewBox="0 0 24 24"
+        />
       </button>
       {isOpen && (
         <div

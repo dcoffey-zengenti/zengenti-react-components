@@ -54,5 +54,7 @@
     "react-dom": ">=17.0.2",
     "react-helmet": "^6.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-helmet": "^6.1.0"
+  }
 }

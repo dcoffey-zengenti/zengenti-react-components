@@ -4,3 +4,4 @@ export * from "./components/accordion";
 export * from "./components/alert";
 export * from "./components/icon";
 export * from "./components/meta";
+export * from "./components/blockQuote";

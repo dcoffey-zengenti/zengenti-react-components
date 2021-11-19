@@ -1,12 +1,12 @@
 .alert {
   font-family: "Poppins", sans-serif;
-  padding: 8px 16px;
-  max-width: 463px;
-  width: 100%;
+  padding: 8px 32px 16px 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  border-radius: 8px;
+  max-width: 720px;
 }
 
 .alert-icon__wrapper {
@@ -14,6 +14,9 @@
   height: 40px;
   border-radius: 50%;
   margin: 0 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .alert-high {
@@ -41,7 +44,7 @@
 }
 
 .alert-text {
-  margin: 8px 0 0;
+  margin: 16px 0 0;
   font-size: 14px;
   line-height: 24px;
 }
