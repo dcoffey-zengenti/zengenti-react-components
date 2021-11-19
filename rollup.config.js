@@ -2,7 +2,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-// import postcss from "rollup-plugin-postcss";
+import postcss from "rollup-plugin-postcss";
 
 import packageJson from "./package.json";
 
@@ -17,7 +17,7 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      // postcss(),
+      postcss(),
       typescript({
         declaration: true,
         declarationDir: "./lib",
@@ -25,15 +25,18 @@ export default [
         exclude: [
           "node_modules",
           "lib",
-          "src/**/*stories.tsx",
-          "src/**/*test.*",
           "public",
+          "**/stories",
+          "**/*.stories.ts",
+          "**/__tests__",
+          "**/*.test.ts",
         ],
       }),
     ],
     external: [
       ...Object.keys(packageJson.dependencies),
       ...Object.keys(packageJson.devDependencies),
+      "react-helmet",
     ],
   },
 ];
