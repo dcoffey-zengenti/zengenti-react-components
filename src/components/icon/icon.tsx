@@ -3,14 +3,18 @@ import Close from "./assets/close";
 import Collapse from "./assets/collapse";
 import Email from "./assets/email";
 import Expand from "./assets/expand";
+import Information from "./assets/information";
+import Question from "./assets/question";
+import Warning from "./assets/warning";
 
 // social icons
 import Facebook from "./assets/facebook";
-import Information from "./assets/information";
+import FacebookRev from "./assets/facebookRev";
+import Instagram from "./assets/instagram";
 import Linkedin from "./assets/linkedin";
-import Question from "./assets/question";
+import LinkedinRev from "./assets/linkedinRev";
+import Tiktok from "./assets/tiktok";
 import Twitter from "./assets/twitter";
-import Warning from "./assets/warning";
 import YouTube from "./assets/youtube";
 
 const iconDictionary = {
@@ -19,12 +23,16 @@ const iconDictionary = {
   email: <Email />,
   expand: <Expand />,
   facebook: <Facebook />,
-  linkedin: <Linkedin />,
-  twitter: <Twitter />,
-  youtube: <YouTube />,
+  facebookRev: <FacebookRev />,
   information: <Information />,
+  instagram: <Instagram />,
+  linkedin: <Linkedin />,
+  linkedinRev: <LinkedinRev />,
   question: <Question />,
+  tiktok: <Tiktok />,
+  twitter: <Twitter />,
   warning: <Warning />,
+  youtube: <YouTube />,
 };
 
 export interface IconProps {
@@ -38,12 +46,16 @@ export interface IconProps {
     | "email"
     | "expand"
     | "facebook"
-    | "linkedin"
-    | "twitter"
-    | "youtube"
+    | "facebookRev"
     | "information"
+    | "instagram"
+    | "linkedin"
+    | "linkedinRev"
     | "question"
-    | "warning";
+    | "tiktok"
+    | "twitter"
+    | "warning"
+    | "youtube";
 }
 
 export const Icon = ({
