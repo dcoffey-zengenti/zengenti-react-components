@@ -4,7 +4,7 @@ import "./breadcrumbs.css";
 export type BreadcrumbsProps = {
   nodes: {
     displayName: string;
-    uri: string;
+    path: string;
     id: string;
     isCurrent?: boolean;
   }[];
@@ -22,6 +22,7 @@ export function Breadcrumbs({ nodes, separator = ">" }: BreadcrumbsProps) {
       <ol className="breadcrumbs__list">
         {nodes.map((node, index) => {
           const currentNode = node.isCurrent ? "current" : "";
+          if (!node.displayName) return null;
           return (
             <Fragment key={node.id}>
               {separator && index !== 0 && (
@@ -33,7 +34,7 @@ export function Breadcrumbs({ nodes, separator = ">" }: BreadcrumbsProps) {
                 </span>
               )}
               <li className={["breadcrumbs__list-item", currentNode].join(" ")}>
-                <a className="breadcrumbs__link" href={node.uri}>
+                <a className="breadcrumbs__link" href={node.path}>
                   {node.displayName}
                 </a>
               </li>
