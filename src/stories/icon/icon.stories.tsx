@@ -1,7 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Icon } from "../../index";
-//import "./icons.css";
 
 export default {
   title: "Components/Icons",
@@ -13,11 +12,11 @@ export default {
 
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
 
-export const IconSelect = Template.bind({});
+export const IconSelector = Template.bind({});
 
-IconSelect.args = {
+IconSelector.args = {
   height: 24,
   width: 24,
   viewBox: "0 0 24 24",
-  type: "facebook",
+  type: "twitter",
 };
