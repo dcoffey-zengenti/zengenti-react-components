@@ -45,6 +45,7 @@ export const EmbeddedMedia = ({
         <div className="embedded-media__wrapper-image">
           <button onClick={handleClick} className="embedded-media__play">
             <span className="embedded-media__play--text">Play video</span>
+            <i className="embedded-media__play--text--icon"></i>
           </button>
           <img
             src={placeholderImage}
