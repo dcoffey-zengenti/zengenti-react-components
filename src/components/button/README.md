@@ -8,6 +8,7 @@ Call to Action buttons or short CTA's are buttons that are used across your site
 
 | Props             | Type      | isRequired? | Description                                                                                                                  |
 | ----------------- | --------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `className`       | `string`  | `false`     | Used to give the component a class name so that you can apply styles                                                         |
 | `type`            | `string`  | `true`      | Type of button you want, for exmaple a `button`, `submit` or `reset`                                                         |
 | `isPrimary`       | `boolean` | `true`      | Add's a `primary` or a `secondary` class depending on this value - This way you can easily style the component how you wish. |
 | `isDisabled`      | `boolean` | `true`      | Add's the `disabled` prop to the button allowing the button to be disabled                                                   |
