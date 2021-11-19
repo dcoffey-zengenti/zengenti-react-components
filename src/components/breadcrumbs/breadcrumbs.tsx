@@ -1,3 +1,4 @@
+import React, { Fragment } from "react";
 import "./breadcrumbs.css";
 
 export type BreadcrumbsProps = {
@@ -7,10 +8,13 @@ export type BreadcrumbsProps = {
     id: string;
     isCurrent?: boolean;
   }[];
-  separator: string | React.SVGProps<SVGSVGElement> | null;
+  /**
+   Can be an SVG or simple bit of text, even an emoji
+  */
+  separator?: string | React.SVGProps<SVGSVGElement> | null;
 };
 
-export function Breadcrumbs({ nodes, separator }: BreadcrumbsProps) {
+export function Breadcrumbs({ nodes, separator = ">" }: BreadcrumbsProps) {
   if (!nodes || !nodes.length) return null;
 
   return (
@@ -19,7 +23,7 @@ export function Breadcrumbs({ nodes, separator }: BreadcrumbsProps) {
         {nodes.map((node, index) => {
           const currentNode = node.isCurrent ? "current" : "";
           return (
-            <>
+            <Fragment key={node.id}>
               {separator && index !== 0 && (
                 <span
                   className="breadcrumbs__list-separator"
@@ -28,15 +32,12 @@ export function Breadcrumbs({ nodes, separator }: BreadcrumbsProps) {
                   {separator}
                 </span>
               )}
-              <li
-                className={["breadcrumbs__list-item", currentNode].join(" ")}
-                key={node.id}
-              >
+              <li className={["breadcrumbs__list-item", currentNode].join(" ")}>
                 <a className="breadcrumbs__link" href={node.uri}>
                   {node.displayName}
                 </a>
               </li>
-            </>
+            </Fragment>
           );
         })}
       </ol>
