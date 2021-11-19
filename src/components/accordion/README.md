@@ -2,7 +2,15 @@
 
 Built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
 
-**A simple accordion component, use this as a group or as one single. Accordion's allows you to vertically display content which can be revealed or hidden.**
+**A simple accordion component, use this as a group or as one single. The accordion can expand to show rolled up content by clicking on a heading or arrow and contract to hide it again.**
+
+## Example
+
+**Given** a FAQ web page with a long list of questions
+<br />
+**When** a user clicks on a question
+<br />
+**Then** the accordion component opens and displays the information
 
 ## Props
 
@@ -52,7 +60,7 @@ import { Accordion } from '../../index';
 />
 ```
 
-Usage of the `<AccordionItem />` , pass in the props, `title` and `items`.
+Usage of the `<AccordionItem />` , pass in the props, `title` and `content`.
 
 ```
 import { AccordionItem } from '../../index';
