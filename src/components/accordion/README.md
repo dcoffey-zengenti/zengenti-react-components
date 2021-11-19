@@ -50,11 +50,11 @@ import { Accordion } from '../../index';
 	items={[
 	{
 		title:  "Example title",
-		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae 			aliquam volutpat nibh duis enim mi nibh.t tortor.",
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae liquam volutpat nibh duis enim mi nibh.t tortor.",
 	},
 	{
 		title:  "Example title",
-		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae 			aliquam volutpat nibh duis enim mi nibh.t tortor.",
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae aliquam volutpat nibh duis enim mi nibh.t tortor.",
 	},
 	]}
 />
@@ -66,6 +66,6 @@ Usage of the `<AccordionItem />` , pass in the props, `title` and `content`.
 import { AccordionItem } from '../../index';
 <AccordionItem
 	title="Example Accordion!"
-	content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae 			aliquam volutpat nibh duis enim mi nibh.t tortor.",
+	content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vitae aliquam volutpat nibh duis enim mi nibh.t tortor.",
 />
 ```
