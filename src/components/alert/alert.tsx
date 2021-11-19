@@ -25,7 +25,7 @@ export const Alert = ({
     <>
       {!isClosed && (
         <div
-          className={`${className} alert alert-${type}`}
+          className={[className, `alert alert-${type}`].join(" ")}
           style={{ backgroundColor }}
         >
           <div

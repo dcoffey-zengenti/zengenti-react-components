@@ -29,7 +29,9 @@ export const Button = ({
     <button
       style={{ backgroundColor, color: textColor }}
       type={type}
-      className={`${className} btn ${isPrimary ? "primary" : "secondary"}`}
+      className={[className, `btn ${isPrimary ? "primary" : "secondary"}`].join(
+        " "
+      )}
       disabled={isDisabled}
       onClick={(e) => _handleClick(e)}
     >
