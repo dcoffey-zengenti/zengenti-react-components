@@ -1,3 +1,6 @@
+.embedded-media {
+  font-family: "Poppins", sans-serif;
+}
 .embedded-media__play {
   position: absolute;
   left: 50%;
