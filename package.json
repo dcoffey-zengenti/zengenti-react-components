@@ -1,6 +1,6 @@
 {
   "name": "zengenti-ps-components",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
