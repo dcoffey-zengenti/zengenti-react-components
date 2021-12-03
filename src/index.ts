@@ -6,3 +6,4 @@ export * from "./components/icon";
 export * from "./components/meta";
 export * from "./components/blockQuote";
 export * from "./components/breadcrumbs";
+export * from "./components/link";
