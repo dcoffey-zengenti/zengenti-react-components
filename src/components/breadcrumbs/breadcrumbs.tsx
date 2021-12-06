@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "../link";
 import "./breadcrumbs.css";
 
 export type BreadcrumbsProps = {
@@ -34,9 +35,9 @@ export function Breadcrumbs({ nodes, separator = ">" }: BreadcrumbsProps) {
                 </span>
               )}
               <li className={["breadcrumbs__list-item", currentNode].join(" ")}>
-                <a className="breadcrumbs__link" href={node.path}>
+                <Link className="breadcrumbs__link" uri={node.path}>
                   {node.displayName}
-                </a>
+                </Link>
               </li>
             </Fragment>
           );
