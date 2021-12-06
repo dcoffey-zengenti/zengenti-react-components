@@ -1,4 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import reactRouterDecorator from "../../../.storybook/decorators/react-router";
 
 import { Link } from "../../index";
 import "./link.css";
@@ -15,6 +16,7 @@ export default {
 const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
 
 export const Primary = Template.bind({});
+Primary.decorators = [reactRouterDecorator];
 Primary.args = {
   title: "Example link title",
   text: "Example link",
