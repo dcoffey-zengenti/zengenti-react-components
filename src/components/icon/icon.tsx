@@ -37,6 +37,7 @@ const iconDictionary = {
 
 export interface IconProps {
   fill?: string;
+  label?: string;
   width?: number;
   height?: number;
   viewBox?: string;
@@ -60,6 +61,7 @@ export interface IconProps {
 
 export const Icon = ({
   fill,
+  label,
   width,
   height,
   viewBox,
@@ -70,6 +72,7 @@ export const Icon = ({
   return (
     <svg
       role="img"
+      aria-label={label}
       width={width}
       height={height}
       viewBox={viewBox}

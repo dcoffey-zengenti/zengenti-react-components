@@ -19,4 +19,5 @@ IconSelector.args = {
   width: 24,
   viewBox: "0 0 24 24",
   type: "twitter",
+  label: "follow us on twitter",
 };
